@@ -3,7 +3,6 @@ import re
 import joblib
 import pandas as pd
 import numpy as np
-import st_button
 
 def mycleaning(doc):
    return re.sub("[^a-zA-Z ]","",doc).lower()
