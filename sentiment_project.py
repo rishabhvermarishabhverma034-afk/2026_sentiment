@@ -95,7 +95,7 @@ if files:
       pred=model.predict(corpus)
       prob=np.max(model.predict_proba(corpus),axis=1)
       df["Sentiment"]=pred
-      df["Confidance"]=prob
+      df["Confidence"]=prob
       df["Sentiment"]=df["Sentiment"].map({0:'Negative👎',1:'Positive😊👍'})
       placeholder.dataframe(df)
     
